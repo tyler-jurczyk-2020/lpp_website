@@ -1,10 +1,11 @@
-import About from '../pages/About.js'
+import { Link, Outlet } from "react-router-dom";
 
 function Navbar() {
     return(
-        <div>
-            <button>Home</button> 
-            <button>About</button>
+        <div className='Navbar'>
+            <Link to='/'>Home</Link> 
+            <Link to='/about'>About</Link>
+            <Outlet/>
         </div>
     );
 }

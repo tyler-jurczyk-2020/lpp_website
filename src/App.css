@@ -28,8 +28,8 @@
   color: #61dafb;
 }
 
-.Navbar {
-    
+.Navbar, .About, .Home {
+    font-size: 20px; 
 }
 
 @keyframes App-logo-spin {
