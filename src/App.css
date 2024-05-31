@@ -46,8 +46,7 @@
     text-align: left;
 }
 
-.LppLogo:hover + .NavbarList,
-.NavbarList:hover {
+.NavbarListClicked {
     display: flex;
     flex-direction: column;
 }
@@ -55,4 +54,13 @@
 .LppLogo {
     height: 20vh;
     object-fit: contain;
+}
+
+.LogoNav {
+    display: flex;
+    flex-direction: column;
+}
+
+.Navigate {
+    margin-right: auto;
 }
