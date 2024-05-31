@@ -46,12 +46,13 @@
     text-align: left;
 }
 
-.Logo:hover + .NavbarList,
+.LppLogo:hover + .NavbarList,
 .NavbarList:hover {
     display: flex;
     flex-direction: column;
 }
 
-.Logo {
-    font-size: 50px;
+.LppLogo {
+    height: 20vh;
+    object-fit: contain;
 }
