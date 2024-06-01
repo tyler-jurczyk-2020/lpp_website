@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import LppLogo from "../lpp_logo.png"
+import SidebarIcon from "../sidebar_icon.png"
 
 function Navbar() {
     const [visible, setVisible] = useState(false)
@@ -18,8 +19,12 @@ function Navbar() {
         <div className='Navbar'>
             <div className='Sidebar'>
                 <div className="LogoNav">
+                    <div>
+                        <button onClick={changeListVisibility} className="SidebarButton">
+                            <img src={SidebarIcon} className="SidebarIcon"/>
+                        </button>
+                    </div>
                     <img src={LppLogo} className="LppLogo"/>
-                    <button onClick={changeListVisibility} className="Navigate">Navigate</button>
                 </div> 
                 <div className={cssSelection}>
                     <Link className='NavbarEntry' to='/'>Home</Link> 

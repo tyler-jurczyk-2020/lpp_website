@@ -51,16 +51,26 @@
     flex-direction: column;
 }
 
+.SidebarIcon, .SidebarButton {
+    height: 5vh;
+    object-fit: contain;
+}
+
+
 .LppLogo {
     height: 20vh;
     object-fit: contain;
+    position: fixed;
+    left: 40%;
 }
 
 .LogoNav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .Navigate {
-    margin-right: auto;
+    height: 10vh;
+    object-fit: contain;
+    margin: 0 auto;
 }
