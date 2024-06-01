@@ -16,6 +16,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/properties" element={<Properties/>}/>
+            <Route path="/ashland" element={<Building address="3810 N Ashland Ave" location="ashland"/>}/>
         </Routes>
     </div>
   );
