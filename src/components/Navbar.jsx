@@ -19,9 +19,11 @@ function Navbar() {
         <div className='Navbar'>
             <div className='Sidebar'>
                 <div className="LogoNav">
-                    <button onClick={changeListVisibility} className="SidebarButton">
-                        <img src={SidebarIcon} alt="" className="SidebarIcon"/>
-                    </button>
+                    <div className="AlignButton">
+                        <button onClick={changeListVisibility} className="SidebarButton">
+                            <img src={SidebarIcon} alt="" className="SidebarIcon"/>
+                        </button>
+                    </div>
                     <div className={cssSelection}>
                         <Link className='NavbarEntry' to='/'>Home</Link> 
                         <Link className='NavbarEntry' to='/about'>About</Link>

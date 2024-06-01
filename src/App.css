@@ -61,6 +61,11 @@
     border-style: none;
 }
 
+.AlignButton {
+    display: flex;
+    flex-direction: row;
+}
+
 .LppLogo {
     height: 20vh;
     object-fit: contain;
