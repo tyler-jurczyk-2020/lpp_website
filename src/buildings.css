@@ -2,6 +2,11 @@
     display: grid; 
 }
 
+.RemoveDecoration {
+    text-decoration: none;
+    color: black;
+}
+
 .AshlandCard {
     border-style: solid;
     border-color: gray;
