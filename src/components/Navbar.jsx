@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
-import LppLogo from "../lpp_logo.png"
-import SidebarIcon from "../sidebar_icon.png"
+import LppLogo from "/lpp_logo.png"
+import SidebarIcon from "/sidebar_icon.png"
 
 function Navbar() {
     const [visible, setVisible] = useState(false)

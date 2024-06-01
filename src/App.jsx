@@ -1,8 +1,8 @@
 import './App.css';
-import Navbar from './components/Navbar.js'
-import Home from './pages/Home.js'
-import About from './pages/About.js'
-import Building from './pages/Building.js'
+import Navbar from './components/Navbar.jsx'
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import Building from './pages/Building.jsx'
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
