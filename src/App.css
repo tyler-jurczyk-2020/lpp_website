@@ -37,11 +37,17 @@
     flex-direction: column;
     overflow: hidden;
     width: 0;
-    transition: width 2s;
+    transition: width 1s;
+}
+
+.NavbarEntry {
+    text-decoration: none;
+    color: black;
+    padding: 1vh;
 }
 
 .NavbarEntry:hover {
-    border-style: solid;
+    text-decoration-line: underline;
 }
 
 .Sidebar {
@@ -55,7 +61,7 @@
     flex-direction: column;
     overflow: hidden;
     width: 200px;
-    transition: width 2s;
+    transition: width 1s;
 }
 
 .SidebarIcon {

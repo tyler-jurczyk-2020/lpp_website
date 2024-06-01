@@ -27,7 +27,7 @@ function Navbar() {
                     <div className={cssSelection}>
                         <Link className='NavbarEntry' to='/'>Home</Link> 
                         <Link className='NavbarEntry' to='/about'>About</Link>
-                        <Link className='NavbarEntry' to='/ashland'>Building</Link>
+                        <Link className='NavbarEntry' to='/ashland'>Properties</Link>
                     </div>
                 </div> 
                 <img src={LppLogo} alt="" className="LppLogo"/>
