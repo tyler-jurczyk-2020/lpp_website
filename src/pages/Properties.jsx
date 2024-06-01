@@ -1,6 +1,12 @@
+import '../buildings.css';
+import Card from '../components/Card.jsx'
+import AshlandExterior from '/ashland/exterior1.jpg'
+
 function Properties() {
     return(
-        <div>
+        <div className="PropertiesGrid">
+            <Card cardClass="Ashland" image={AshlandExterior}
+                  title="3810 N Ashland Ave" description="Kendog is always crashing the function at Ashland to leafblow."/>
         </div>
     )
 }

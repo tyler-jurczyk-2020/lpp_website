@@ -1,0 +1,23 @@
+.PropertiesGrid {
+    display: grid; 
+}
+
+.AshlandImage {
+    height: 40vh;
+    object-fit: contain;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-style: solid;
+}
+
+.AshlandCard {
+    border-style: solid;
+    border-color: black;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 300px;
+}
+
+.AshlandDesc {
+    overflow-wrap: break-word;
+}
