@@ -19,18 +19,16 @@ function Navbar() {
         <div className='Navbar'>
             <div className='Sidebar'>
                 <div className="LogoNav">
-                    <div>
-                        <button onClick={changeListVisibility} className="SidebarButton">
-                            <img src={SidebarIcon} className="SidebarIcon"/>
-                        </button>
+                    <button onClick={changeListVisibility} className="SidebarButton">
+                        <img src={SidebarIcon} alt="" className="SidebarIcon"/>
+                    </button>
+                    <div className={cssSelection}>
+                        <Link className='NavbarEntry' to='/'>Home</Link> 
+                        <Link className='NavbarEntry' to='/about'>About</Link>
+                        <Link className='NavbarEntry' to='/ashland'>Building</Link>
                     </div>
-                    <img src={LppLogo} className="LppLogo"/>
                 </div> 
-                <div className={cssSelection}>
-                    <Link className='NavbarEntry' to='/'>Home</Link> 
-                    <Link className='NavbarEntry' to='/about'>About</Link>
-                    <Link className='NavbarEntry' to='/ashland'>Building</Link>
-                </div>
+                <img src={LppLogo} alt="" className="LppLogo"/>
             </div>
             <Outlet/>
         </div>
