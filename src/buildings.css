@@ -2,22 +2,31 @@
     display: grid; 
 }
 
+.AshlandCard {
+    border-style: solid;
+    border-color: gray;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 300px;
+}
+
 .AshlandImage {
     height: 40vh;
     object-fit: contain;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-style: solid;
-}
-
-.AshlandCard {
-    border-style: solid;
-    border-color: black;
-    margin: 0 auto;
-    border-radius: 20px;
-    max-width: 300px;
+    border-bottom-color: gray;
 }
 
 .AshlandDesc {
     overflow-wrap: break-word;
+}
+
+.AshlandCard:hover {
+    border-color: black;
+}
+
+.AshlandCard:hover > .AshlandImage {
+    border-bottom-color: black;
 }
