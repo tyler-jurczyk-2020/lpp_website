@@ -35,3 +35,13 @@
 .AshlandCard:hover > .AshlandImage {
     border-bottom-color: black;
 }
+
+.Floors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.FloorsCards {
+    margin: 0 50px;
+}

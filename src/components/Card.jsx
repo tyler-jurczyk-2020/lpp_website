@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 
-function Card({ cardClass, image, title, description}) {
+function Card({ cardClass, image, title, description, target}) {
     return(
-        <Link className="RemoveDecoration" to="/ashland">
+        <Link className="RemoveDecoration" to={target}>
             <div className={cardClass + "Card"}>
                     <img src={image} alt="" className={cardClass + "Image"}/>
                     <div className={cardClass + "Desc"}>

@@ -1,46 +1,25 @@
-import Unit from "./Unit";
+import Card from "../components/Card";
 
-function toImages(floor_glob) {
-    let floor_images = []
-    for(const img in floor_glob) {
-        floor_images.push(img)
-    }
-    return floor_images
-}
-
-function Building({ address, location }) {
-    let first_floor_glob, second_floor_glob, third_floor_glob
-    let first_floor_images, second_floor_images, third_floor_images
-    if(location != undefined) {
-        switch(location) {
-            case "ashland":
-                first_floor_glob = import.meta.glob('/public/ashland/*.jpg')
-                second_floor_glob = import.meta.glob('/public/ashland/*.jpg')
-                third_floor_glob = import.meta.glob('/public/ashland/*.jpg')
-                break
-            default: 
-                first_floor_glob = null
-                second_floor_glob = null
-                third_floor_glob = null
-                break
-        }
-        if(first_floor_glob != undefined) {
-            first_floor_images = toImages(first_floor_glob)
-            second_floor_images = toImages(second_floor_glob)
-            third_floor_images = toImages(third_floor_glob)
-        }
-    }
-    else {
-        first_floor_images, second_floor_images, third_floor_images = []
-    }
-     
+function Building({ address, thumbnails }) {
+    
     return(
-    <div>
-        <p>{address}</p>
-        <Unit unitImages={first_floor_images}/>
-        <Unit unitImages={second_floor_images}/>
-        <Unit unitImages={third_floor_images}/>
-    </div>
+        <div>
+            <p>{address}</p>
+            <div className="Floors">
+                <div className="FloorsCards">
+                <Card cardClass="Ashland" image={thumbnails[0]} target="/ashland/firstfloor" 
+                      title="First Floor Duplex 2 Bed 1 Bath" description="It will cost your kidney to live here"/>
+                </div>
+                <div className="FloorsCards">
+                <Card cardClass="Ashland" image={thumbnails[1]} target="/ashland/secondfloor"
+                      title="Second Floor 2 Bed 1 Bath" description="Party central"/>
+                </div>
+                <div className="FloorsCards">
+                <Card cardClass="Ashland" image={thumbnails[2]} target="/ashland/thirdfloor"
+                      title="Third Floor 2 Bed 1 Bath" description="Dishwasher is crashing out hard"/>
+                </div>
+            </div>
+        </div>
     );
 }
 
