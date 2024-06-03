@@ -13,18 +13,21 @@ import { useState } from 'react';
 
 function App() {
   const ashland_thumbnails = [AshlandOne, AshlandTwo, AshlandThree]
-  const [overlayDisplay, setOverlayDisplay] = useState("none")
+  const [overlayAlpha, setOverlayAlpha] = useState("rgba(0, 0, 0, 0)")
+  const [overlayPointer, setOverlayPointer] = useState("none")
   function updateOverlay() {
-    if(overlayDisplay == "none") {
-      setOverlayDisplay("inline")
+    if(overlayAlpha == "rgba(0, 0, 0, 0)") {
+      setOverlayAlpha("rgba(0, 0, 0, 0.5)")
+      setOverlayPointer("auto")
     }
     else {
-      setTimeout(() => setOverlayDisplay("none"), 1000)
+      setOverlayAlpha("rgba(0, 0, 0, 0)")
+      setOverlayPointer("none")
     }
   }
   return (
     <div className="App">
-        <div className="OverlayShadow" style={{display: overlayDisplay}}/>
+        <div className="OverlayShadow" style={{backgroundColor: overlayAlpha, pointerEvents: overlayPointer}}/>
         <div className="Sidebar">
             <Navbar overlayFunc={updateOverlay}/>
         </div>
