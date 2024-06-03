@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import LppLogo from "/lpp_logo.png"
 import SidebarIcon from "/sidebar_icon.png"
 
-function Navbar() {
+function Navbar({ overlayFunc }) {
     const [visible, setVisible] = useState(false)
     const [cssSelection, setCssSelection] = useState('NavbarList')
     function changeListVisibility() {
         setVisible(!visible) 
+        overlayFunc()
     }
     useEffect(() => {
         if(visible)

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #cacbcc;
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
 }
 
 .App-logo {
@@ -37,7 +39,7 @@
     flex-direction: column;
     overflow: hidden;
     width: 0;
-    transition: width 1s;
+    transition: width 1s ease-out;
 }
 
 .NavbarEntry {
@@ -61,7 +63,7 @@
     flex-direction: column;
     overflow: hidden;
     width: 200px;
-    transition: width 1s;
+    transition: width 1s ease-out;
 }
 
 .SidebarIcon {
@@ -88,6 +90,9 @@
     display: flex;
     flex-direction: column;
     position: fixed;
+    background-color: #cacbcc;
+    background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+    height: 100vh;
 }
 
 .Navigate {
@@ -96,4 +101,11 @@
     margin: 0 auto;
 }
 
-
+.OverlayShadow {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    transition: left 1s ease-in;
+}

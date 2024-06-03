@@ -9,13 +9,24 @@ import { Routes, Route } from 'react-router-dom';
 import AshlandOne from '/ashland/firstfloor/A42.jpg'
 import AshlandTwo from '/ashland/secondfloor/thumbnail.jpg'
 import AshlandThree from '/ashland/firstfloor/A42.jpg'
+import { useState } from 'react';
 
 function App() {
   const ashland_thumbnails = [AshlandOne, AshlandTwo, AshlandThree]
+  const [overlayDisplay, setOverlayDisplay] = useState("none")
+  function updateOverlay() {
+    if(overlayDisplay == "none") {
+      setOverlayDisplay("inline")
+    }
+    else {
+      setTimeout(() => setOverlayDisplay("none"), 1000)
+    }
+  }
   return (
     <div className="App">
+        <div className="OverlayShadow" style={{display: overlayDisplay}}/>
         <div className="Sidebar">
-            <Navbar/>
+            <Navbar overlayFunc={updateOverlay}/>
         </div>
         <Routes>
             <Route path="/" element={<Home/>}/>
