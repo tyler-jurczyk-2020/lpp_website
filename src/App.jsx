@@ -9,28 +9,12 @@ import { Routes, Route } from 'react-router-dom';
 import AshlandOne from '/ashland/firstfloor/A42.jpg'
 import AshlandTwo from '/ashland/secondfloor/thumbnail.jpg'
 import AshlandThree from '/ashland/firstfloor/A42.jpg'
-import { useState } from 'react';
 
 function App() {
   const ashland_thumbnails = [AshlandOne, AshlandTwo, AshlandThree]
-  const [overlayAlpha, setOverlayAlpha] = useState("rgba(0, 0, 0, 0)")
-  const [overlayPointer, setOverlayPointer] = useState("none")
-  function updateOverlay() {
-    if(overlayAlpha == "rgba(0, 0, 0, 0)") {
-      setOverlayAlpha("rgba(0, 0, 0, 0.5)")
-      setOverlayPointer("auto")
-    }
-    else {
-      setOverlayAlpha("rgba(0, 0, 0, 0)")
-      setOverlayPointer("none")
-    }
-  }
   return (
     <div className="App">
-        <div className="OverlayShadow" style={{backgroundColor: overlayAlpha, pointerEvents: overlayPointer}}/>
-        <div className="Sidebar">
-            <Navbar overlayFunc={updateOverlay}/>
-        </div>
+        <Navbar/>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
