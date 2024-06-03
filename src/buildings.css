@@ -49,6 +49,7 @@
 .LocalArea {
     font-size: 40px;
     margin: 0;
+    text-align: start;
 }
 
 .BuildingAddy {
@@ -86,4 +87,9 @@
     overflow: hidden;
     height: 0;
     margin: 0;
+}
+
+.Units {
+    border-top-style: solid;    
+    margin: 50px 200px 0px 200px;
 }
