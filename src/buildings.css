@@ -45,3 +45,45 @@
 .FloorsCards {
     margin: 0 50px;
 }
+
+.LocalArea {
+    font-size: 40px;
+    margin: 0;
+}
+
+.BuildingAddy {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.ExpandButton {
+    font-size: 40px;
+    background-color: transparent;
+    border-style: none;
+    margin: 0;
+}
+
+.ExpandButtonDiv {
+    align-content: center;
+}
+
+.ExpandableBanner {
+    display: flex;
+    flex-direction: row;
+    border-top-style: solid;
+    margin: 50px 200px 0px 200px;
+}
+
+.BannerBody {
+    border-bottom-style: solid; 
+    margin: 0px 200px 50px 200px;
+    padding-left: 30px;
+    text-align: start;
+    font-size: 20px;
+}
+
+.HideDiv {
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+}

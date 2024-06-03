@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-function Card({ cardClass, image, title, description, target}) {
+function Card({ cardClass, image, title, description, target }) {
     return(
         <Link className="RemoveDecoration" to={target}>
             <div className={cardClass + "Card"}>
