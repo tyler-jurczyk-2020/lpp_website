@@ -1,5 +1,6 @@
 .PropertiesGrid {
     display: grid; 
+    justify-items: center;
 }
 
 .RemoveDecoration {

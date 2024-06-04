@@ -64,8 +64,7 @@
     flex-direction: column;
     overflow: hidden;
     width: 140px;
-    transition: width .6s ease-out;
-}
+    transition: width .6s ease-out; }
 
 .SidebarIcon {
     height: 5vh;
@@ -94,6 +93,7 @@
     background-color: #cacbcc;
     background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
     height: 100vh;
+    z-index: 300;
 }
 
 .Navigate {
@@ -103,10 +103,13 @@
 }
 
 .OverlayShadow {
-    height: 100vh;
+    display: flex;
+    flex-grow: 1;
+    min-height: 100vh;
     width: 100vw;
     position: absolute;
     left: 0;
     transition: left .6s ease-in;
     transition: background-color .6s ease-in;
+    z-index: 200;
 }
