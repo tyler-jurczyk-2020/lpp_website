@@ -7,7 +7,7 @@ function Navbar() {
     const [visible, setVisible] = useState(false)
     const [cssSelection, setCssSelection] = useState('NavbarList')
     const [overlayAlpha, setOverlayAlpha] = useState("rgba(0, 0, 0, 0)")
-    const [overlayPointer, setOverlayPointer] = useState("auto")
+    const [overlayPointer, setOverlayPointer] = useState("none")
 
     function updateOverlay() {
         if(overlayAlpha == "rgba(0, 0, 0, 0)") {

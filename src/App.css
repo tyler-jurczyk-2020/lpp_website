@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  min-height: 100vh;
   background-color: #cacbcc;
   background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
 }
