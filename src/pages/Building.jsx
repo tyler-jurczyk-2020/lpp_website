@@ -15,17 +15,20 @@ function Building({ address, thumbnails, areaDescription }) {
             <div className="Units">
                 <p className="LocalArea">Units</p>
                 <div className="Floors">
-                    <div className="FloorsCards">
-                    <Card cardClass="Ashland" image={thumbnails[0]} target="/ashland/firstfloor" 
-                          title="First Floor Duplex 2 Bed 1 Bath" description="It will cost your kidney to live here"/>
+                    <div className="CardFloor">
+                        <p className="FloorNumber">First Floor</p>
+                        <div className="FloorsCards">
+                        <Card cardClass="Unit" image={thumbnails[0]} target="/ashland/firstfloor" 
+                              title="Duplex 2 Bed 1 Bath" description="Available July 1st"/>
+                        </div>
                     </div>
                     <div className="FloorsCards">
-                    <Card cardClass="Ashland" image={thumbnails[1]} target="/ashland/secondfloor"
-                          title="Second Floor 2 Bed 1 Bath" description="Party central"/>
+                    <Card cardClass="Unit" image={thumbnails[1]} target="/ashland/secondfloor"
+                          title="2 Bed 1 Bath" description="Unavailable"/>
                     </div>
                     <div className="FloorsCards">
-                    <Card cardClass="Ashland" image={thumbnails[2]} target="/ashland/thirdfloor"
-                          title="Third Floor 2 Bed 1 Bath" description="Dishwasher is crashing out hard"/>
+                    <Card cardClass="Unit" image={thumbnails[2]} target="/ashland/thirdfloor"
+                          title="2 Bed 1 Bath" description="Unavailable"/>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ function Card({ cardClass, image, title, description, target }) {
             <div className={cardClass + "Card"}>
                     <img src={image} alt="" className={cardClass + "Image"}/>
                     <div className={cardClass + "Desc"}>
-                        <p>{title}</p>
+                        <p className={cardClass + "Title"}>{title}</p>
                         <p>{description}</p>
                     </div>
             </div>
