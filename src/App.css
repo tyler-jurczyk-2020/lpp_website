@@ -113,3 +113,37 @@
     transition: background-color .6s ease-in;
     z-index: 200;
 }
+
+.CarouselMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CarouselImg {
+    height: 60vh;
+}
+
+.CarouselNext, .CarouselPrev {
+    font-size: 20px;
+    color: white;
+}
+
+.CarouselNextWrapper, .CarouselPrevWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.CarouselNextWrapper {
+     left: 80px;
+}
+
+.CarouselPrevWrapper {
+    right: 80px;
+}

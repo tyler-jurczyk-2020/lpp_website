@@ -8,7 +8,7 @@ function toImages(floor_glob) {
     return floor_images
 }
 
-function Unit({ location, floor}) {
+function Unit({ location, floor }) {
     let floor_glob, floor_images
     if(location != undefined) {
         switch(location) {
@@ -33,7 +33,7 @@ function Unit({ location, floor}) {
                 break
         }
         if(floor_glob != undefined) {
-            floor_images = toImages(first_floor_glob)
+            floor_images = toImages(floor_glob)
         }
     }
     else {
@@ -42,7 +42,7 @@ function Unit({ location, floor}) {
     return (
         <div>
             Image Carousel
-            <Carousel imageSet={unitImages}/>  
+            <Carousel imageSet={floor_images}/>  
         </div>
     )
 }
