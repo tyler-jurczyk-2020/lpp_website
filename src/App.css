@@ -140,6 +140,10 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.CarouselNextWrapper:hover, .CarouselPrevWrapper:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .CarouselNextWrapper {
      left: 80px;
 }
