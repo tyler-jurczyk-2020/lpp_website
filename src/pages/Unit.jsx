@@ -1,3 +1,4 @@
+import ExpandableDiv from "../components/ExpandableDiv.jsx"
 import Carousel from "../components/Carousel.jsx"
 
 function toImages(floor_glob) {
@@ -43,6 +44,7 @@ function Unit({ location, floor }) {
         <div>
             Image Carousel
             <Carousel imageSet={floor_images}/>  
+            <ExpandableDiv header="Amenities" areaDescription="Some cool amenities"/>
         </div>
     )
 }

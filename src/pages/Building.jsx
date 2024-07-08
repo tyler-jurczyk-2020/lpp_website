@@ -1,14 +1,8 @@
-import { useState } from "react";
+import ExpandableDiv from "../components/ExpandableDiv";
 import Card from "../components/Card";
 
 function Building({ address, thumbnails, areaDescription }) {
-    const [toggleDiv, setToggleDiv] = useState("HideDiv")
-    function ToggleDiv() {
-        if (toggleDiv == "")
-            setToggleDiv("HideDiv")
-        else
-            setToggleDiv("")
-    }
+    
     return (
         <div>
             <p className="BuildingAddy">{address}</p>
@@ -40,20 +34,9 @@ function Building({ address, thumbnails, areaDescription }) {
                                 title="2 Bed 1 Bath" description="Unavailable" />
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div>
-                <div className="ExpandableBanner">
-                    <div className="ExpandButtonDiv">
-                        <button className="ExpandButton" onClick={ToggleDiv}>+</button>
-                    </div>
-                    <p className="LocalArea">Local Area</p>
-                </div>
-                <div className="BannerBody">
-                    <p className={toggleDiv}>{areaDescription}</p>
-                </div>
-            </div>
+            <ExpandableDiv header="Local Area" areaDescription={areaDescription}/>
         </div>
     );
 }
