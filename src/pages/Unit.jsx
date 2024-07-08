@@ -44,7 +44,15 @@ function Unit({ location, floor }) {
         <div>
             Image Carousel
             <Carousel imageSet={floor_images}/>  
-            <ExpandableDiv header="Amenities" areaDescription="Some cool amenities"/>
+            <ExpandableDiv header="Unit Description" areaDescription="It's a pretty cool place to live"/>
+             <div>
+                <div className="ConsecutiveBanner">
+                    <p className="LocalArea">Amenities</p>
+                </div>
+                <div className="BannerBody">
+                    <p>Some cool amenities cards will go here</p>
+                </div>
+            </div>
         </div>
     )
 }

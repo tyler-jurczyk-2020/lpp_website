@@ -73,6 +73,12 @@
     margin: 50px 200px 0px 200px;
 }
 
+.ConsecutiveBanner {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 200px 0px 200px;
+}
+
 .BannerBody {
     border-bottom-style: solid; 
     margin: 0px 200px 0px 200px;

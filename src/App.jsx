@@ -21,7 +21,8 @@ function App() {
             <Route path="/about" element={<About/>}/>
             <Route path="/properties" element={<Properties/>}/>
             <Route path="/ashland" element={<Building address="3810 N Ashland Ave" location="ashland" thumbnails={ashland_thumbnails} 
-                areaDescription="Located just a few blocks/steps from Southport Corridor shopping and restaurants. Located in the highly sought after Blaine School district & very close to all public transportations, including the Southport 'L' or & Paulina/Lincoln 'L'. Minutes/walking distance to Trader Joe's, Wrigley Field, countless bars & restaurants."/>}/>
+                areaDescription="Located just a few blocks/steps from Southport Corridor shopping and restaurants. Located in the highly sought after Blaine School district & very close to all public transportations, including the Southport 'L' or & Paulina/Lincoln 'L'. Minutes/walking distance to Trader Joe's, Wrigley Field, countless bars & restaurants."
+                buildingDescription="Nice brick building ong"/>}/>
             <Route path="/ashland/firstfloor" element={<Unit location="ashland" floor="first"/>}/>
         </Routes>
     </div>

@@ -1,7 +1,7 @@
 import ExpandableDiv from "../components/ExpandableDiv";
 import Card from "../components/Card";
 
-function Building({ address, thumbnails, areaDescription }) {
+function Building({ address, thumbnails, areaDescription, buildingDescription }) {
     
     return (
         <div>
@@ -36,7 +36,8 @@ function Building({ address, thumbnails, areaDescription }) {
                     </div>
                 </div>
             </div>
-            <ExpandableDiv header="Local Area" areaDescription={areaDescription}/>
+            <ExpandableDiv header="Local Area" areaDescription={areaDescription} isConsecutiveBanner={false}/>
+            <ExpandableDiv header="About This Building" areaDescription={buildingDescription} isConsecutiveBanner={true}/>
         </div>
     );
 }

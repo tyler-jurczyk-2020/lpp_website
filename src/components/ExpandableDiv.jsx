@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ExpandableDiv({ header, areaDescription }) {
+function ExpandableDiv({ header, areaDescription, isConsecutiveBanner }) {
     const [toggleDiv, setToggleDiv] = useState("HideDiv")
     function ToggleDiv() {
         if (toggleDiv == "")
@@ -8,9 +8,10 @@ function ExpandableDiv({ header, areaDescription }) {
         else
             setToggleDiv("")
     }
+    const expandableBanner = (isConsecutiveBanner) ? "ConsecutiveBanner" : "ExpandableBanner"
     return (
     <div>
-        <div className="ExpandableBanner">
+        <div className={expandableBanner}>
             <div className="ExpandButtonDiv">
                 <button className="ExpandButton" onClick={ToggleDiv}>+</button>
             </div>
