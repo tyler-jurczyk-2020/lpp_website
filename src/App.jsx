@@ -22,7 +22,8 @@ function App() {
             <Route path="/properties" element={<Properties/>}/>
             <Route path="/ashland" element={<Building address="3810 N Ashland Ave" location="ashland" thumbnails={ashland_thumbnails} 
                 areaDescription="Located just a few blocks/steps from Southport Corridor shopping and restaurants. Located in the highly sought after Blaine School district & very close to all public transportations, including the Southport 'L' or & Paulina/Lincoln 'L'. Minutes/walking distance to Trader Joe's, Wrigley Field, countless bars & restaurants."
-                buildingDescription="Nice brick building ong"/>}/>
+                buildingDescription="Built in 19XX and located in the coveted Y Neighborhood on the Near Northside, 3810 N Ashland boasts a red brick exterior with a 2 car garage located in the alley." titles={["Duplex 4 Bed 2 Bath", "2 Bed 1 Bath", "2 Bed 1 Bath"]}
+                availability={[false, false, false]} buildingType="ashland"/>}/>
             <Route path="/ashland/firstfloor" element={<Unit location="ashland" floor="first"/>}/>
         </Routes>
     </div>
